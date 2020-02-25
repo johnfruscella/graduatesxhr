@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form>
+      <h2>Create Graduate</h2>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" />
+      <br />
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" />
+      <br />
+      <label for="email">First Email:</label>
+      <input type="text" id="email" />
+      <br />
+
+      <button
+        type="submit"
+        id="post-btn"
+        onclick="createNewGraduate()"
+        value="submit"
+      >
+        Post Request
+      </button>
+    </form>
+
+    <h2>Show All Graduates</h2>
+
+    <button onclick="getAllGraduates()">Get Request</button>
+    <div id="results"></div>
+  </body>
+</html>
