@@ -50,6 +50,7 @@ const getAllGraduates = () => {
 };
 
 function createNewGraduate() {
+  event.preventDefault();
   var graduate = {
     firstName: document.getElementById("firstName").value,
     lastName: document.getElementById("lastName").value,
